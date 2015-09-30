@@ -1,0 +1,8 @@
+{
+  "name": "chrome-api-proxy",
+  "description": "Leverage Chrome App API in Browser",
+  "license": "MIT",
+  "dependencies": {
+    "json-human": "*"
+  }
+}

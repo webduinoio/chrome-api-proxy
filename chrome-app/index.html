@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Chrome API Proxy</title>
+  <script src="json-human/src/json.human.js"></script>
+  <script src="main.js"></script>
+  <link rel="stylesheet" href="json-human/css/json.human.css"></link>
+  <style>
+  html,
+  body {
+    overflow-y: auto;
+  }
+  
+  body {
+    -webkit-user-select: text
+  }
+  
+  .button {
+    font-size: 26px;
+  }
+  </style>
+</head>
+
+<body>
+  <button class='button' id='refresh'>刷新</button>
+  <h1>Serial Port Status</h1>
+  <div id='serial-port-status'></div>
+  <div>
+    <input id='disconnId' type='text' size='5' />
+    <button id='disconnect'>Disconnect</button>
+    <span id='disconnStatus'></span>
+  </div>
+</body>
+
+</html>
