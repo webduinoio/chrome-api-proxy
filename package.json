@@ -1,7 +1,7 @@
 {
   "name": "chrome-api-proxy",
-  "version": "0.0.3",
-  "description": "Leverage Chrome App API in Browser",
+  "version": "0.0.4",
+  "description": "Leverage Chrome App APIs in Your Normal Pages",
   "scripts": {
     "build": "./node_modules/.bin/gulp",
     "clean": "./node_modules/.bin/gulp clean"
