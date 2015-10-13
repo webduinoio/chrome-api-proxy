@@ -1,6 +1,6 @@
 {
   "name": "chrome-api-proxy",
-  "description": "Leverage Chrome App APIs in Normal Htmls",
+  "description": "Leverage Chrome App APIs in Normal Web Pages",
   "license": "MIT",
   "dependencies": {
     "json-human": "*"

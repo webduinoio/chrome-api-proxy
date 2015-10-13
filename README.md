@@ -1,11 +1,11 @@
-# Chrome API Proxy
+# API Proxy for Google Chrome™
 
-Leverage Chrome App APIs in Normal Htmls
+Leverage Chrome App APIs in Normal Web Pages
 
 ## Installation
 
-1. Install the "Chrome API Proxy" app. Launch the app whenever you want to use the APIs.
-2. Install the "Chrome API Proxy - Agent" extension.
+1. Install the "API Proxy for Google Chrome™" app. Launch the app whenever you want to use the APIs.
+2. Install the "API Proxy Agent for Google Chrome™" extension.
 
 ## Usage
 
@@ -16,12 +16,16 @@ Insert
 <script src="http://webduinoio.github.io/chrome-api-proxy/lib/chrome.{API_USED}.js"></script>
 ```
 
-in your normal htmls.
+in your normal web pages.
 
-Use the chrome app apis as in the chrome apps.
+Now you can use the chrome-app apis even not in chrome-apps.
+
+## Disclaimer
+
+Google Chrome™ is a trademark of Google Inc. Use of this trademark is subject to Google Permissions.
 
 ## Contribute
 
-Extending api is easy. We surely welcome your pull requests.
+Extending the apis is easy. Any contribution or suggestion is welcome.
 
 ## [License](LICENSE)
