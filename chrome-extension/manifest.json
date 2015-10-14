@@ -10,7 +10,8 @@
     "js": [
       "contentScript.js"
     ],
-    "run_at": "document_start"
+    "run_at": "document_start",
+    "all_frames": true
   }],
   "icons": {
     "128": "assets/icon_128.png"
