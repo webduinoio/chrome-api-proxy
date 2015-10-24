@@ -1,4 +1,4 @@
-+(function () {
++(function (window, document) {
 
   'use strict';
 
@@ -21,6 +21,10 @@
     });
 
     refreshStatus(node);
+
+    window.addEventListener('focus', function () {
+      refreshStatus(node);
+    }, false);
   }, false);
 
   function refreshStatus(node) {
@@ -43,4 +47,4 @@
     return document.getElementById(id);
   }
 
-}());
+}(window, document));

@@ -63,6 +63,8 @@
           port = portMap[senderId];
 
         if (!port) {
+          delete portMap[senderId];
+          cleanupListener(senderId);
           return;
         }
 
@@ -106,11 +108,18 @@
             transRes, resolve(objName));
 
           listenerMap[objName].receivers.forEach(function (receiver, idx) {
-            portMap[receiver.portName].postMessage({
-              jsonrpc: '2.0',
-              id: receiver.id,
-              result: args
-            });
+            var rcvPort = receiver.portName;
+
+            if (!portMap[rcvPort]) {
+              delete portMap[rcvPort];
+              cleanupListener(rcvPort);
+            } else {
+              portMap[rcvPort].postMessage({
+                jsonrpc: '2.0',
+                id: receiver.id,
+                result: args
+              });
+            }
           });
         },
         receivers: [{
