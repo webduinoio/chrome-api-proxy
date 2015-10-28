@@ -12,8 +12,8 @@
 
   chrome.app.runtime.onLaunched.addListener(function () {
 
-    chrome.app.window.create('serial.html', {
-      id: "serial",
+    chrome.app.window.create('status.html', {
+      id: "status",
       innerBounds: {
         width: 480,
         height: 640,

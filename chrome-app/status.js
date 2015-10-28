@@ -26,11 +26,8 @@
     }, false);
 
     getNode('disconnect-bt').addEventListener('click', function () {
-      chrome.bluetoothSocket.close(parseInt(getNode('disconnId-bt').value), function (e) {
+      chrome.bluetoothSocket.close(parseInt(getNode('disconnId-bt').value), function () {
         refreshStatusBT();
-        if (e !== true) {
-          alert(e + '');
-        }
       });
     });
 
