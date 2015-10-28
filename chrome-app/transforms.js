@@ -20,4 +20,15 @@
     }];
   };
 
+  scope.transforms.request['chrome.bluetoothSocket.send'] = function (socketId, data) {
+    return [socketId, new Uint8Array(data).buffer];
+  };
+
+  scope.transforms.response['chrome.bluetoothSocket.onReceive.addListener'] = function (event) {
+    return [{
+      socketId: event.socketId,
+      data: slice.call(new Uint8Array(event.data))
+    }];
+  };
+
 }(window));
