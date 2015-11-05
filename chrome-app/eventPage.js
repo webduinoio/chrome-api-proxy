@@ -134,10 +134,8 @@
   function removeListener(objName, portName, id) {
     if (listenerMap[objName]) {
       if (typeof id === 'undefined') {
-        listenerMap[objName].receivers.forEach(function (receiver, idx) {
-          if (receiver.portName === portName) {
-            listenerMap[objName].receivers.splice(idx, 1);
-          }
+        listenerMap[objName].receivers = listenerMap[objName].receivers.filter(function (receiver) {
+          return receiver.portName !== portName;
         });
       } else {
         listenerMap[objName].receivers.some(function (receiver, idx) {
