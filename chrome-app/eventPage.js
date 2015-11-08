@@ -55,7 +55,15 @@
     } else {
       if (typeof obj === 'function') {
         params = transformParams(m, params, transReq, ctx);
-        obj.apply(ctx, params.concat(callback));
+        try {
+          obj.apply(ctx, params.concat(callback));
+        } catch (e) {
+          portMap[senderId].postMessage({
+            jsonrpc: '2.0',
+            id: id,
+            exception: e.message
+          });
+        }
       }
 
       function callback() {
