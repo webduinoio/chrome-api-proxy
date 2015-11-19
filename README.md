@@ -28,7 +28,7 @@ Google Chrome™ is a trademark of Google Inc. Use of this trademark is subject 
 
 Extending the apis is easy. Any contribution or suggestion is welcome.
 
-## Tutorials
+## Wiki
 
 - [繁體中文 ( Traditional Chinese )](https://github.com/webduinoio/chrome-api-proxy/wiki/Chinese-(-Traditional-)) 
 
