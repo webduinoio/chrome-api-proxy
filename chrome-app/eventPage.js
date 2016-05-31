@@ -18,7 +18,9 @@
         width: 480,
         height: 640,
         minWidth: 480,
-        minHeight: 640
+        maxWidth: 480,
+        minHeight: 640,
+        maxHeight: 640
       }
     });
 
