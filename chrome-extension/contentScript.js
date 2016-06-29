@@ -22,7 +22,7 @@
   }, false);
 
   function receiveMessage(msg) {
-    window.postMessage(msg, '*');
+    window.postMessage(msg, window.location.origin);
   }
 
   function onDisconnect() {
