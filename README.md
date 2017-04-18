@@ -18,7 +18,7 @@ Insert
 
 into your normal web pages.
 
-Now you can use the chrome-app apis even not in chrome-apps.
+Now you can use the Chrome app apis even not in Chrome apps.
 
 ## Disclaimer
 
@@ -34,4 +34,4 @@ Extending the apis is easy. Any contribution or suggestion is welcome.
 
 ## License
 
-This project is lecensed unser MIT, please see [LICENSE](LICENSE) for more information.
+This project is licensed under MIT, please see [LICENSE](LICENSE) for more information.
